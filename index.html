@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="quiz-box">
+
+        <!-- quiz header -->
+        <div class="quiz__header">
+            <h2>Awesome Quiz Application</h2>
+
+            <!-- timer -->
+            <div class="timer">
+                <span>Times Left: </span>
+                <span>60</span>
+            </div>
+        </div>
+
+        <!-- quiz body  -->
+        <div class="quiz__body">
+            <h2 class="question"></h2>
+            <a href="#" class="clear-selection">Clear Selection</a>
+            
+            <div class="options">
+              <ul>
+                
+              </ul>
+            </div>
+        </div>
+
+        <!-- quiz footer -->
+        <div class="quiz__footer">
+            <button class="prev-ques-btn">Prev Question</button>
+            <h4><span class="ques__no">1</span> of 5 Questions</h4>
+            <button class="next-ques-btn">Next Question</button>
+            <button class="submit_btn" onclick="submitAnswers()">Submit</button>
+        </div>
+    </div>
+
+    <div class="results">
+        <div class="overlay"></div>
+        <div class="result__content">
+            <span class="times-icon">&times;</span>
+            <div class="result-body">
+                <div class="greeting">
+                <img class="result_images" src="" alt="congratulations">
+                    <h2 class="greeting">Congratulations !</h2>
+                </div>
+                <div class="res">
+                    <h2>You Got <span class="percentage">80</span>%</h2>
+                    <span>You answered <span class="total_correct">5</span>  out of 5 questions Correct</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
